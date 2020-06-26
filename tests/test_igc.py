@@ -1,8 +1,8 @@
 from ictk import igc
 
 
-def test_rmh_parsing():
-    result = igc.read_rmh_file("./tests/rmh_test_file.txt")
+def test_igc_parsing():
+    result = igc.read_igc_file("./tests/rmh_test_file.txt")
     # fmt: off
     assert result == (
         ("Fyrirlestraröð", "Framfara", "stendur", "fyrir", "fyrirlestri", "um", "ástæður", "ofþjálfunar", ",", "einkenni", "og", "meðferð", "."),

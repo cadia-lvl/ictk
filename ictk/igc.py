@@ -13,9 +13,9 @@ Sentence = Tuple[Token, ...]
 Corpus = Tuple[Sentence, ...]
 
 
-def read_rmh_file(path: str) -> Corpus:
+def read_igc_file(path: str) -> Corpus:
     """
-    Reads a single RMH file and returns a TokCorpus.
+    Reads a single RMH/IGC file and returns a TokCorpus.
 
     Adjusted code from xml_tools.py from Róbert Kjaran <robert@kjaran.com>
     """
@@ -37,10 +37,10 @@ def read_rmh_file(path: str) -> Corpus:
 
 
 def read_rmh(files: List[str], threads=1, chunksize=400) -> Iterable[Corpus]:
-    """Reads RMH files and extracts the tokens, including punctuations.
+    """Reads RMH/IGC files and extracts the tokens, including punctuations.
 
     Args:
-        files: The list of RMH files to process.
+        files: The list of RMH/IGC files to process.
         threads: The number of threads to use.
         chunksize: The number of files to send to each thread.
     Returns:
@@ -48,6 +48,6 @@ def read_rmh(files: List[str], threads=1, chunksize=400) -> Iterable[Corpus]:
     """
     with ProcessPoolExecutor(max_workers=threads) as executor:
         results = tqdm(
-            executor.map(read_rmh_file, files, chunksize=chunksize), total=len(files)
+            executor.map(read_igc_file, files, chunksize=chunksize), total=len(files)
         )
         yield from results
