@@ -1,8 +1,10 @@
+"""To test IGC specific features."""
 from ictk import igc
 
 
 def test_igc_parsing():
-    result = igc.read_igc_file("./tests/rmh_test_file.txt")
+    """Test whether a single IGC file is parsed correctly."""
+    result = igc.read_igc_file("./tests/igc_test_file.txt")
     # fmt: off
     assert result == (
         ("Fyrirlestraröð", "Framfara", "stendur", "fyrir", "fyrirlestri", "um", "ástæður", "ofþjálfunar", ",", "einkenni", "og", "meðferð", "."),

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""The package console entry point."""
 import logging
 
 import click
@@ -10,6 +11,7 @@ log = logging.getLogger()
 
 @click.group()
 def cli():
+    """Entrypoint of the click client. Other commands are attached to this group."""
     pass
 
 
@@ -21,7 +23,7 @@ def cli():
     "--chunksize", type=int, default=400, help="Number of files to process per thread."
 )
 def read_rmh(input, output, threads, chunksize):
-    """Parses a list of xml files using the tei format tailored for RMH, extracts all sentences and writes to a file.
+    """Parse a list of xml files using the tei format tailored for RMH, extracts all sentences and writes to a file.
 
     Each RMH file contains some metadata which is ignored.
     Each RMH contains many paragraps, which contain many sentences, which contain many tokens.

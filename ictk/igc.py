@@ -1,3 +1,4 @@
+"""A module for working with IGC."""
 import logging
 from typing import List, Tuple, Iterable
 from concurrent.futures import ProcessPoolExecutor
@@ -14,8 +15,7 @@ Corpus = Tuple[Sentence, ...]
 
 
 def read_igc_file(path: str) -> Corpus:
-    """
-    Reads a single RMH/IGC file and returns a TokCorpus.
+    """Read a single RMH/IGC file and returns a TokCorpus.
 
     Adjusted code from xml_tools.py from Róbert Kjaran <robert@kjaran.com>
     """
@@ -37,7 +37,7 @@ def read_igc_file(path: str) -> Corpus:
 
 
 def read_rmh(files: List[str], threads=1, chunksize=400) -> Iterable[Corpus]:
-    """Reads RMH/IGC files and extracts the tokens, including punctuations.
+    """Read RMH/IGC files and extracts the tokens, including punctuations.
 
     Args:
         files: The list of RMH/IGC files to process.
