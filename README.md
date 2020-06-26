@@ -20,6 +20,7 @@ The Icelandic Corpora Toolkit
 
 * [Introduction](#introduction)
 * [Corpora](#corpora)
+* [Setup](#setup)
 * [Example of Usage](#example-of-usage)
 * [Contributors](#contributors)
 * [License](#license)
@@ -39,6 +40,7 @@ There are two main sources of corpora available for Icelandic:
 * <https://clarin.is/>
 * <http://malfong.is/>
 
+## Setup
 
 ## Example of Usage
 
