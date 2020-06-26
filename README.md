@@ -8,11 +8,10 @@ The Icelandic Corpora Toolkit
   Reykjavik University - School of Computer Science, Menntavegur 1, IS-101 Reykjavik, Iceland
 </i></p>
 
-<img src="https://user-images.githubusercontent.com/9976294/85858541-54e7f600-b7ab-11ea-9347-c400d0b7a6e9.png" alt="Cover Image" align="center"/>
+<img src="https://user-images.githubusercontent.com/9976294/85868719-33dad180-b7ba-11ea-883a-4bff9c58e0cc.png" alt="Cover Image" align="center"/>
 
 <!-- Logo using: -->
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 
 ## Table of Contents
 <!-- ⛔️ MD-MAGIC-EXAMPLE:START (TOC:collapse=true&collapseText=Click to expand) -->
