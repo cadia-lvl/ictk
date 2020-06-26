@@ -8,7 +8,7 @@ The Icelandic Corpora Toolkit
   Reykjavik University - School of Computer Science, Menntavegur 1, IS-101 Reykjavik, Iceland
 </i></p>
 
-<img src="https://user-images.githubusercontent.com/9976294/85868719-33dad180-b7ba-11ea-883a-4bff9c58e0cc.png" alt="Cover Image" align="center"/>
+<img src="https://user-images.githubusercontent.com/9976294/85869930-e65f6400-b7bb-11ea-8c53-196d1ec83189.png" alt="Cover Image" align="center"/>
 
 <!-- Logo using: -->
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
