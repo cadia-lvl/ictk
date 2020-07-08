@@ -1,10 +1,17 @@
-"""To test IGC specific features."""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Collection of tests for ``ictk/igc.py``.
+
+ICTK: A collection of scripts to use with various Icelandic text corpora.
+Copyright (C) 2020 Mál- og raddtæknistofa Gervigreindarseturs HR - Language and Voice Lab
+"""
+
 from ictk import igc
 
 
 def test_igc_parsing():
     """Test whether a single IGC file is parsed correctly."""
-    result = igc.read_igc_file("./tests/igc_test_file.txt")
+    result = igc.get_corpus_from_file("./tests/igc_test_file.txt")
     # fmt: off
     assert result == (
         ("Fyrirlestraröð", "Framfara", "stendur", "fyrir", "fyrirlestri", "um", "ástæður", "ofþjálfunar", ",", "einkenni", "og", "meðferð", "."),
