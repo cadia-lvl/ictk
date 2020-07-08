@@ -1,1 +1,1 @@
-"""The Icelandic Corpora Toolkit."""
+
