@@ -44,11 +44,16 @@ There are two main sources of corpora available for Icelandic:
 
 ## Example of Usage
 
-## Contributors
-<a href="https://github.com/cadia-lvl/ictk/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=cadia-lvl/ictk" />
-</a>
-<!-- Made with [contributors-img](https://contributors-img.web.app). -->
+### Reading the IGC
+The IGC is distributed as a collection of .xml files in the tei format. We provide a tool to parse these files and write (some of) the content to a file.
+
+- The command takes as a first argument a file (or stdin, using `-`) with a single filepath in each line.
+- The second argument is a file to write the parsed files.
+```
+find /data/risamalheild/2018/rmh1 -type f \( -name "*.xml" -not -name "hdr?.xml" \) | \
+  ./main.py read-rmh - rmh.txt --threads 2 --chunksize 400
+```
+This will prase all `.xml` files, excluding the header files, in the directory `/data/risamalheild/2018/rmh1` using 2 threads and processing 400 files at once. The output is written to `rmh.txt`.
 
 ## License
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
@@ -58,3 +63,11 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 <p align="center">
 🌟 PLEASE STAR THIS REPO IF YOU FOUND SOMETHING INTERESTING 🌟
 </p>
+
+## Contributors
+<a href="https://github.com/cadia-lvl/ictk/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=cadia-lvl/ictk" />
+</a>
+<!-- Made with [contributors-img](https://contributors-img.web.app). -->
+
+## [Contributing](contributing.md)
