@@ -18,18 +18,18 @@ Here below are some of the most common examples of usage.
 
 ## 1. Extracting plain text from IGC
 The IGC is distributed as a collection of .xml files in the tei format. 
-ICTK provides a script that takes these files and write (some of) the content to an output file.
+ICTK provides a script that takes these files and writes (some of) the content to an output file.
 
 <details>
 <summary>Terra User (A cloud cluster at LVL)</summary>
 
-- The command takes as a first argument a file (or stdin, using `-`) with a single filepath in each line.
+- The command takes as a first argument a file (or stdin, using `-`) with a single file path in each line.
 - The second argument is a file to write the parsed files.
 
 ```consoles
 find /data/risamalheild/2018/rmh1 -type f \( -name "*.xml" -not -name "hdr?.xml" \) | ./main.py read-rmh - rmh.txt --threads 16 --chunksize 400
 ```
-This will prase all `.xml` files, excluding the header files, in the directory `/data/risamalheild/2018/rmh1` using 16 threads and processing 400 files at once. The output is written to `rmh.txt`.
+This will prase all `.xml` files, excluding the header files, in the directory `/data/risamalheild/2018/rmh1` using 16 threads and processing 400 files. The output is written to `rmh.txt`.
 
 </details>
 
@@ -38,8 +38,8 @@ This will prase all `.xml` files, excluding the header files, in the directory `
 
 Make sure you 
 
-- The command takes as a first argument a file (or stdin, using `-`) with a single filepath in each line.
-- The second argument is the output file to write the parsed files.
+- The command takes as a first argument a file (or stdin, using `-`) with a single file path in each line.
+- The second argument is the output file to write the parsed data.
 
 ```consoles
 $ find rmh/ -type f \( -name "*.xml" -not -name "hdr?.xml" \) | ictk/main.py read-igc - rmh.txt --threads 2 --chunksize 400

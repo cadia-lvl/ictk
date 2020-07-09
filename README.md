@@ -13,55 +13,103 @@ The Icelandic Corpora Toolkit
 <!-- Logo using: -->
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 
-
+<!-- omit in toc -->
 ## Table of Contents
-<!-- ⛔️ MD-MAGIC-EXAMPLE:START (TOC:collapse=true&collapseText=Click to expand) -->
+
 <details>
 <summary>Click to expand</summary>
 
-- [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
-- [Corpora](#corpora)
-- [Setup](#setup)
-- [Example of Usage](#example-of-usage)
-- [License](#license)
-- [References](#references)
-- [Contributors](#contributors)
-- [Contributing](#contributing)
-
+- [1. Introduction](#1-introduction)
+  - [1.1. Corpora](#11-corpora)
+- [2. Setup](#2-setup)
+- [3. Example of Usage](#3-example-of-usage)
+- [4. License](#4-license)
+- [5. References](#5-references)
+- [6. Contributors](#6-contributors)
 </details>
-<!-- ⛔️ MD-MAGIC-EXAMPLE:END -->
 
-## Introduction
+## 1. Introduction
 
 The Icelandic Corpora Toolkit is a  collection of scripts to use with various Icelandic text corpora.
 
-## Corpora
+### 1.1. Corpora
 
 There are two main sources of corpora available for Icelandic:
 
-* <https://clarin.is/>
-* <http://malfong.is/>
+- <https://clarin.is/>
+- <http://malfong.is/>
 
-## Setup
+## 2. Setup
 
-## Example of Usage
 
-* [The Icelandic Gigaword Corpus (IGC)](./examples/igc.md)
+<details>
+<summary>Linux and macOS</summary>
 
-## License
+Create a virtual enviroment
+
+```
+$ pyton3 -m venv ./venv python=3.6
+$ . ./venv/scripts/activate
+(venv) $
+```
+
+Install required modules
+
+```
+(venv) $ pip install -r requirements.txt
+```
+
+Try to run it
+
+```
+(venv) $ python ictk.py --version
+ICTK 1.0.0
+```
+</details>
+
+
+<details>
+<summary>Windows</summary>
+Create a virtual enviroment
+
+```
+C:\Users\USER>c:\Python36\python -m venv c:\Python36\venv
+C:\Users\USER>c:\Python36\venv\Scripts\activate.bat
+(venv) C:\Users\USER>
+```
+
+Install required modules
+
+```
+(venv) C:\Users\USER>pip install -r requirements.txt
+```
+
+Try to run it
+
+```
+(venv) C:\Users\USER>python ictk.py --version
+ICTK 1.0.0
+```
+</details>
+
+
+## 3. Example of Usage
+
+- [The Icelandic Gigaword Corpus (IGC)](./examples/igc.md)
+
+## 4. License
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
-## References
+## 5. References
 
-<p align="center">
-🌟 PLEASE STAR THIS REPO IF YOU FOUND SOMETHING INTERESTING 🌟
-</p>
-
-## Contributors
+## 6. Contributors
 <a href="https://github.com/cadia-lvl/ictk/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=cadia-lvl/ictk" />
 </a>
 <!-- Made with [contributors-img](https://contributors-img.web.app). -->
 
-## [Contributing](contributing.md)
+[Become a contributor](contributing.md)
+
+<p align="center">
+🌟 PLEASE STAR THIS REPO IF YOU FOUND SOMETHING INTERESTING 🌟
+</p>
