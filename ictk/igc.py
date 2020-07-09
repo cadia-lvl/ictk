@@ -35,12 +35,12 @@ def get_corpus(files: List[str], threads=1, chunksize=400) -> Iterable[Corpus]:
     """
     with ProcessPoolExecutor(max_workers=threads) as executor:
         results = tqdm(
-            executor.map(get_corpus_from_file, files, chunksize=chunksize), total=len(files)
+            executor.map(get_text_from_file, files, chunksize=chunksize), total=len(files)
         )
         yield from results
 
 
-def get_corpus_from_file(path: str) -> Corpus:
+def get_text_from_file(path: str) -> Corpus:
     """Read a single IGC file and returns a Corpus.
 
     Args:
