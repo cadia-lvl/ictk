@@ -11,7 +11,7 @@ from ictk import igc
 
 def test_igc_parsing():
     """Test whether a single IGC file is parsed correctly."""
-    result = igc.get_corpus_from_file("./tests/igc_test_file.txt")
+    result = igc.get_text_from_file("./tests/igc_test_file.txt")
     # fmt: off
     assert result == (
         ("Fyrirlestraröð", "Framfara", "stendur", "fyrir", "fyrirlestri", "um", "ástæður", "ofþjálfunar", ",", "einkenni", "og", "meðferð", "."),
