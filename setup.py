@@ -42,6 +42,6 @@ setup(
         "Topic :: Utilities",
         "Topic :: Text Processing :: Linguistic",
     ],
-    keywords=["ictk", "nlp", "corpus", "corpora", "icelandic"],
+    keywords=["ictk", "lvl", "nlp", "corpus", "corpora", "icelandic"],
     python_requires='>=3.6',
 )
