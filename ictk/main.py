@@ -17,7 +17,6 @@ log = logging.getLogger()
 
 @click.group()
 @click.version_option(prog_name='ICTK', message="%(prog)s %(version)s")
-@click.pass_context
 def cli():
     """ICTK - A collection of scripts to use with various Icelandic text corpora"""
     pass
