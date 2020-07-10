@@ -57,6 +57,7 @@ Install required modules
 
 ```
 (venv) $ pip install -e .
+```
 
 Try to run it
 
