@@ -24,12 +24,13 @@ def cli():
 
 
 @cli.command()
-@click.argument("input", type=click.File("r"))
-@click.argument("output", type=click.File("w"), default='-', required=False)
 @click.option("--threads", type=int, default=1, help="Number of threads to use.")
 @click.option(
     "--chunksize", type=int, default=400, help="Number of files to process per thread."
 )
+@click.argument("input", type=click.File("r"))
+@click.argument("output", type=click.File("w"), default='-', required=False)
+
 def read_igc(input, output, threads, chunksize):
     """Parse a list of xml files using the tei format tailored for IGC, extracts all sentences and writes to a file.
 
