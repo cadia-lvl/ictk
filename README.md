@@ -8,6 +8,8 @@ The Icelandic Corpora Toolkit
   Reykjavik University - School of Computer Science, Menntavegur 1, IS-101 Reykjavik, Iceland
 </i></p>
 
+![Python package](https://github.com/cadia-lvl/ictk/workflows/Python%20package/badge.svg)
+
 <img src="https://user-images.githubusercontent.com/9976294/85869930-e65f6400-b7bb-11ea-8c53-196d1ec83189.png" alt="Cover Image" align="center"/>
 
 <!-- Logo using: -->
@@ -20,7 +22,7 @@ The Icelandic Corpora Toolkit
 <summary>Click to expand</summary>
 
 - [1. Introduction](#1-introduction)
-  - [1.1. Corpora](#11-corpora)
+	- [1.1. Corpora](#11-corpora)
 - [2. Setup](#2-setup)
 - [3. Example of Usage](#3-example-of-usage)
 - [4. License](#4-license)
