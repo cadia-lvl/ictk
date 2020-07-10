@@ -48,7 +48,7 @@ There are two main sources of corpora available for Icelandic:
 Create a virtual enviroment
 
 ```
-$ pyton3 -m venv ./venv python=3.6
+$ python3 -m venv ./venv python=3.6
 $ . ./venv/scripts/activate
 (venv) $
 ```
@@ -56,14 +56,14 @@ $ . ./venv/scripts/activate
 Install required modules
 
 ```
-(venv) $ pip install -r requirements.txt
+(venv) $ pip install -e .
 ```
 
 Try to run it
 
 ```
-(venv) $ python ictk.py --version
-ICTK 1.0.0
+(venv) $ ictk --version
+ICTK 0.0.1
 ```
 </details>
 
@@ -81,14 +81,14 @@ C:\Users\USER>c:\Python36\venv\Scripts\activate.bat
 Install required modules
 
 ```
-(venv) C:\Users\USER>pip install -r requirements.txt
+(venv) C:\Users\USER>pip install -e .
 ```
 
 Try to run it
 
 ```
-(venv) C:\Users\USER>python ictk.py --version
-ICTK 1.0.0
+(venv) C:\Users\USER>ictk --version
+ICTK 0.0.1
 ```
 </details>
 

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""The Icelandic Gigaword Corpus (IGC) module.
-
-This main application
+"""This CLI main application.
 
 ICTK: A collection of scripts to use with various Icelandic text corpora.
 Copyright (C) 2020 Mál- og raddtæknistofa Gervigreindarseturs HR - Language and Voice Lab
@@ -12,24 +10,26 @@ import logging
 
 import click
 
-from ictk import igc
+from ictk.scripts import igc
 
 log = logging.getLogger()
 
 
 @click.group()
+@click.version_option(prog_name='ICTK', message="%(prog)s %(version)s")
 def cli():
-    """Entrypoint of the click client. Other commands are attached to this group."""
+    """ICTK - A collection of scripts to use with various Icelandic text corpora."""
     pass
 
 
 @cli.command()
-@click.argument("input", type=click.File("r"))
-@click.argument("output", type=click.File("w"))
 @click.option("--threads", type=int, default=1, help="Number of threads to use.")
 @click.option(
     "--chunksize", type=int, default=400, help="Number of files to process per thread."
 )
+@click.argument("input", type=click.File("r"))
+@click.argument("output", type=click.File("w"), default='-', required=False)
+
 def read_igc(input, output, threads, chunksize):
     """Parse a list of xml files using the tei format tailored for IGC, extracts all sentences and writes to a file.
 
