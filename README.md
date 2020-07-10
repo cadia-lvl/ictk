@@ -1,3 +1,5 @@
+![Python package](https://github.com/cadia-lvl/ictk/workflows/Python%20package/badge.svg)
+
 <h1 align="center">
 The Icelandic Corpora Toolkit
 </h1>
@@ -7,8 +9,6 @@ The Icelandic Corpora Toolkit
   Center for Analysis and Design of Intelligent Agents, Language and Voice Lab <br/>
   Reykjavik University - School of Computer Science, Menntavegur 1, IS-101 Reykjavik, Iceland
 </i></p>
-
-![Python package](https://github.com/cadia-lvl/ictk/workflows/Python%20package/badge.svg)
 
 <img src="https://user-images.githubusercontent.com/9976294/85869930-e65f6400-b7bb-11ea-8c53-196d1ec83189.png" alt="Cover Image" align="center"/>
 
