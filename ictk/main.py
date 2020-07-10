@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""This CLI main application
+"""This CLI main application.
 
 ICTK: A collection of scripts to use with various Icelandic text corpora.
 Copyright (C) 2020 Mál- og raddtæknistofa Gervigreindarseturs HR - Language and Voice Lab
@@ -18,7 +18,7 @@ log = logging.getLogger()
 @click.group()
 @click.version_option(prog_name='ICTK', message="%(prog)s %(version)s")
 def cli():
-    """ICTK - A collection of scripts to use with various Icelandic text corpora"""
+    """ICTK - A collection of scripts to use with various Icelandic text corpora."""
     pass
 
 
