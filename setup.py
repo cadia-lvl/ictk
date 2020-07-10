@@ -22,8 +22,8 @@ setup(
     url="https://github.com/cadia-lvl/ictk",
 	include_package_data=True,
     install_requires=[
-        'click',
-		'tqdm'
+        'click==7.1.2',
+		'tqdm==4.46.1'
     ],
     entry_points='''
         [console_scripts]
