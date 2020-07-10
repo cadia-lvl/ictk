@@ -56,13 +56,12 @@ $ . ./venv/scripts/activate
 Install required modules
 
 ```
-(venv) $ pip install -r requirements.txt
-```
+(venv) $ pip install -e .
 
 Try to run it
 
 ```
-(venv) $ python ictk.py --version
+(venv) $ ictk --version
 ICTK 1.0.0
 ```
 </details>
@@ -81,13 +80,13 @@ C:\Users\USER>c:\Python36\venv\Scripts\activate.bat
 Install required modules
 
 ```
-(venv) C:\Users\USER>pip install -r requirements.txt
+(venv) C:\Users\USER>pip install -e .
 ```
 
 Try to run it
 
 ```
-(venv) C:\Users\USER>python ictk.py --version
+(venv) C:\Users\USER>ictk --version
 ICTK 1.0.0
 ```
 </details>

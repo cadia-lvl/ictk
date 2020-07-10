@@ -6,7 +6,7 @@ ICTK: A collection of scripts to use with various Icelandic text corpora.
 Copyright (C) 2020 Mál- og raddtæknistofa Gervigreindarseturs HR - Language and Voice Lab
 """
 
-from ictk import igc
+from ictk.scripts import igc
 
 
 def test_igc_parsing():
