@@ -50,7 +50,7 @@ The IGC is distributed as a collection of .xml files in the tei format. We provi
 - The command takes as a first argument a file (or stdin, using `-`) with a single filepath in each line.
 - The second argument is a file to write the parsed files.
 ```
-find /data/risamalheild/2018/rmh1 -type f \( -name "*.xml" -not -name "hdr?.xml" \) | \
+find /data/risamalheild/2018/rmh1 -type f \( -name "*.xml" -not -name "*Hdr.xml" \) | \
   ./main.py read-rmh - rmh.txt --threads 2 --chunksize 400
 ```
 This will prase all `.xml` files, excluding the header files, in the directory `/data/risamalheild/2018/rmh1` using 2 threads and processing 400 files at once. The output is written to `rmh.txt`.
