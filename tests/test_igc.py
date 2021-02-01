@@ -9,9 +9,9 @@ Copyright (C) 2020 Mál- og raddtæknistofa Gervigreindarseturs HR - Language an
 from ictk import igc
 
 
-def test_igc_parsing():
+def test_igc_parsing(igc_test_file):
     """Test whether a single IGC file is parsed correctly."""
-    result = igc.get_corpus_from_file("./tests/igc_test_file.txt")
+    result = igc.get_corpus_from_file(igc_test_file)
     # fmt: off
     assert result == (
         ("Fyrirlestraröð", "Framfara", "stendur", "fyrir", "fyrirlestri", "um", "ástæður", "ofþjálfunar", ",", "einkenni", "og", "meðferð", "."),
