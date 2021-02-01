@@ -45,7 +45,7 @@ def read_igc(input, output, threads, chunksize):
     """
     files = [line.strip() for line in input]
     log.info(f"Processing IGC. Number of files={len(files)}")
-    for corpus in igc.read_IGC(files, threads=threads, chunksize=chunksize):
+    for corpus in igc.get_corpus(files, threads=threads, chunksize=chunksize):
         for sentence in corpus:
             output.write(" ".join(sentence) + "\n")
     log.info("Done.")
