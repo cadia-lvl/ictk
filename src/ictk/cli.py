@@ -20,7 +20,7 @@ log = logging.getLogger()
 @click.group()
 def cli():
     """Entrypoint of the click client. Other commands are attached to this group."""
-    pass
+    logging.basicConfig(format="%(asctime)s - %(message)s", level=logging.INFO)
 
 
 @cli.command()
@@ -49,8 +49,3 @@ def read_igc(input, output, threads, chunksize):
         for sentence in corpus:
             output.write(" ".join(sentence) + "\n")
     log.info("Done.")
-
-
-if __name__ == "__main__":
-    logging.basicConfig(format="%(asctime)s - %(message)s", level=logging.INFO)
-    cli()

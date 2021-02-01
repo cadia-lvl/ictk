@@ -31,11 +31,12 @@ def get_corpus(files: List[str], threads=1, chunksize=400) -> Iterable[Corpus]:
         threads: The number of threads to use.
         chunksize: The number of files to send to each thread.
     Returns:
-        An iterable of Corpus. Corpus=Tuple[Sentence], i.e. a sequence of sentences.
+        An iterable of Corpus. Corpus=Tuple[Sentence, ...], i.e. a sequence of sentences.
     """
     with ProcessPoolExecutor(max_workers=threads) as executor:
         results = tqdm(
-            executor.map(get_corpus_from_file, files, chunksize=chunksize), total=len(files)
+            executor.map(get_corpus_from_file, files, chunksize=chunksize),
+            total=len(files),
         )
         yield from results
 
@@ -46,7 +47,7 @@ def get_corpus_from_file(path: str) -> Corpus:
     Args:
         path: The file path to a single IGC file
     Returns:
-        A Corpus. Corpus=Tuple[Sentence]
+        A Corpus. Corpus=Tuple[Sentence, ...]
     """
     # Adjusted code from xml_tools.py from Róbert Kjaran <robert@kjaran.com>
 
