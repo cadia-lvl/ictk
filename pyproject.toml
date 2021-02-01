@@ -9,8 +9,10 @@ repository = "https://github.com/cadia-lvl/ictk"
 packages = [
     {include = "ictk", from = "src"}
 ]
+
 [tool.poetry.scripts]
 pos = "ictk.cli:cli"
+
 [tool.pytest.ini_options]
 testpaths = [
     "tests"
@@ -23,6 +25,7 @@ tqdm = "^4.56.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.2"
+pydocstyle = "^5.1.1"
 
 [build-system]
 requires = ["poetry>=0.12"]
